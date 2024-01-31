@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+        <script>
+            function toggle() {
+                const heading = document.querySelector('h1');
+                if (heading.innerHTML === 'Hello!') {
+                    heading.innerHTML = 'Goodbye!';
+                } else {
+                    heading.innerHTML = 'Hello!';
+                }
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+                //document.querySelector('button').onclick = toggle;
+                document.querySelector('button').addEventListener('click', toggle);
+            });
+        </script>
+    </head>
+    <body>
+        <h1 style="color: blue;">Hello!</h1>
+        <button>Click Here</button>
+    </body>
+</html>
